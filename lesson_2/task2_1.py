@@ -1,0 +1,13 @@
+my_list = [33, "hi, my dear teacher!", True, [3.5, False, "Hello!"], (-2.3, [2, 4, 6]), {"name": "Volya", "age": 24}]
+print(type(my_list[0]))
+print(type(my_list[1]))
+print(type(my_list[2]))
+print(type(my_list[3]))
+print(type(my_list[3][0]))
+print(type(my_list[3][1]))
+print(type(my_list[3][2]))
+print(type(my_list[4]))
+print(type(my_list[4][0]))
+print(type(my_list[4][1]))
+print(type(my_list[4][1][0]))
+print(type(my_list[5]))
