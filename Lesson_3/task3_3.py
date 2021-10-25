@@ -1,11 +1,13 @@
 def my_func(numb_1, numb_2, numb_3):
     numbers = [numb_1, numb_2, numb_3]
     try:
+        # noinspection PyArgumentList
+        int(numb_1, numb_2, numb_3)
         numbers.remove(min(numbers))
         return sum(numbers)
-    except TypeError:
-        return "Вводите числа"
+    except (ValueError, TypeError):
+        print("Вводите числа!")
 
 
-print(my_func(float(input("Введите первое число: ",)), float(input("Введите второе число: ")),
-        float(input("Введите третье число: "))))
+print(my_func(input("Введите первое число: ",), input("Введите второе число: "),
+        input("Введите третье число: ")))
