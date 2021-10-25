@@ -7,5 +7,6 @@ def my_func(numb_1, numb_2, numb_3):
         return sum(numbers)
     except (ValueError, TypeError):
         print("Вводите числа!")
-print(my_func(input("Введите первое число: ",), input("Введите второе число: "),
-        input("Введите третье число: ")))
+
+
+print(my_func(input("Введите первое число: "), input("Введите второе число: "), input("Введите третье число: ")))
